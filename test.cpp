@@ -32,3 +32,31 @@ TEST_CASE("algebra", "[]")
     REQUIRE(std::is_same_v< double, decltype(prod) >);
     CHECK(prod == Approx{4.});
 }
+
+/*
+#include <iostream>
+#include <math.h>
+#include "Wektor2D.hpp"
+int main()
+{
+    Wektor2D v1;
+    v1.print();
+
+    Wektor2D v2(0.5, 0.9);
+    v2.print();
+
+    v1.setX(0.2);
+    v1.setY(0.3);
+    v1.print();
+
+    double norm1 = v1.norm();
+    double norm2 = v2.norm();
+    std::cout<<norm1<<"     "<<norm2<<"\n\n";
+
+    double iloczynSkalarny = v1*v2;
+    std::cout<<iloczynSkalarny<<"\n\n";
+
+    Wektor2D suma = v1+v2;
+    suma.print();
+}*/
+
